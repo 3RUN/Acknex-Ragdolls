@@ -28,6 +28,8 @@
 	#define RD_LEG_R_HEEL 14
 
 	// solver iteration count for body parts
+	// this affects performance (smaller value -> faster)
+	// but also affects the way joints are simulated (smaller value -> bad joint simulation)
 	#define RAGDOLL_ITERATION 8 // default engine value is 4
 
 	// other body part settings
