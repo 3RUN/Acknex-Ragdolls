@@ -14,5 +14,5 @@ This template uses native acknex physX plugin (A8 version 8.47.1) with a slightl
 
 CREDITS:
 - based on original ragdoll demo for ODE (back in a7) by Dennis van den Broek aka Helghast
-- human model by KennY (https://www.kenney.nl/)
+- human model by Kenny (https://www.kenney.nl/)
 - animations by Mixamo (https://www.mixamo.com/)
