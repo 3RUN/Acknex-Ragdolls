@@ -16,3 +16,8 @@ CREDITS:
 - based on original ragdoll demo for ODE (back in a7) by Dennis van den Broek aka Helghast
 - human model by Kenny (https://www.kenney.nl/)
 - animations by Mixamo (https://www.mixamo.com/)
+
+SCREENSHOTS:
+![Alt text](https://github.com/3RUN/Acknex-Ragdolls/blob/master/screenshots/shot_0.jpg?raw=true "Preview 1.")
+![Alt text](https://github.com/3RUN/Acknex-Ragdolls/blob/master/screenshots/shot_1.jpg?raw=true "Preview 2.")
+![Alt text](https://github.com/3RUN/Acknex-Ragdolls/blob/master/screenshots/shot_2.jpg?raw=true "Preview 3.")
