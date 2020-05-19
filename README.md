@@ -7,6 +7,9 @@ Simple human ragdoll that includes
 - Revolute (hinge) joints for the rest
 - Slow motion effect (can be activated with SPACE key)
 
+You can see ragdolls in motion on my youtube channel:
+https://youtu.be/Qo4QXmsd1c8 
+
 This template uses native acknex physX plugin (A8 version 8.47.1) with a slightly edited ackphysX header.
 
 CREDITS:

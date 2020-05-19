@@ -31,6 +31,8 @@ void npc_event()
 	
 	if(event_type == EVENT_FRAME)
 	{
+		my->pan += 10 * (key_z - key_x) * time_step;
+		
 		if(my->OBJ_HAS_RAGDOLL == true)
 		{
 			ragdoll_update(my);

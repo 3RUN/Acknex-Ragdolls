@@ -96,7 +96,7 @@ void ragdoll_init(RAGDOLL *ragdoll)
 	vec_set(&ragdoll->joint_axis[RD_LEG_R_HEEL], vector(0, 1, 0));
 	
 	// joint limits
-	vec_set(&ragdoll->joint_limit[RD_TORSO], vector(-75, 35, RAGDOLL_BONE_RESTITUTION));
+	vec_set(&ragdoll->joint_limit[RD_TORSO], vector(-45, 45, RAGDOLL_BONE_RESTITUTION));
 	vec_set(&ragdoll->joint_limit[RD_ARM_L_DOWN], vector(0, 145, RAGDOLL_BONE_RESTITUTION));
 	vec_set(&ragdoll->joint_limit[RD_ARM_L_PALM], vector(-35, 35, RAGDOLL_BONE_RESTITUTION));
 	vec_set(&ragdoll->joint_limit[RD_ARM_R_DOWN], vector(0, 145, RAGDOLL_BONE_RESTITUTION));
@@ -264,7 +264,7 @@ void ragdoll_create(ENTITY *ent)
 	ragdoll->ghost_ent = ent_create(human_mdl, &ent->x, NULL);
 	set(ragdoll->ghost_ent, PASSABLE | INVISIBLE);
 	vec_set(&ragdoll->ghost_ent->scale_x, &ent->scale_x);
-	vec_set(&ragdoll->ghost_ent->pan, &ent->pan);
+	//vec_set(&ragdoll->ghost_ent->pan, &ent->pan); // if we rotate ghost entity with the ent, this will mess up joint axis
 	
 	// create each body part !
 	// pelvis
@@ -393,6 +393,9 @@ void ragdoll_update(ENTITY *ent)
 		// move/rotate model with pelvis body part
 		vec_set(&ent->x, &ragdoll->rg_part[RD_PELVIS]->x);
 		vec_set(&ent->pan, &ragdoll->rg_part[RD_PELVIS]->pan);
+		
+		// reset animation
+		ent_animate(ent, NULL, NULL, NULL);
 		
 		// update all physics (limb) parts
 		int i = 0;
