@@ -176,7 +176,7 @@ void ragdoll_setup_bodypart(ENTITY *ent, RAGDOLL *ragdoll, var id)
 		pXent_setelasticity(ent, RAGDOLL_RESTITUTION);
 		pXent_setdamping(ent, RAGDOLL_LINEAR_DAMPING, RAGDOLL_ANGULAR_DAMPING);
 		pXent_setmass(ent, pXent_getmass(ent) * ragdoll->mass[id]);
-		pXent_setiterations(ent, RAGDOLL_ITERATION);
+		pXentSetSolverIterationCount(ent, RAGDOLL_ITERATION);
 		pXent_setccdskeleton(ent, nullvector, true);
 	#endif
 }

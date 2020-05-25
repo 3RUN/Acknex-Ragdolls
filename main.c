@@ -1,10 +1,10 @@
 
 #include <acknex.h>
 #include <default.c>
-#include <ackphysX.h>
 
 #define PRAGMA_POINTER
 
+#define PRAGMA_PATH "resources"
 #define PRAGMA_PATH "rg_parts"
 
 #define OBJ_HEALTH skill50
@@ -15,6 +15,9 @@
 #define TYPE_RD_BODY_PART 1
 
 STRING *human_mdl = "human.mdl";
+
+// <ackphysx.h> will bring trash into WED action list
+#include "ackphysx.h"
 
 #include "ragdoll.h"
 
