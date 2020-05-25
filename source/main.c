@@ -4,8 +4,9 @@
 
 #define PRAGMA_POINTER
 
+#define PRAGMA_PATH "code"
 #define PRAGMA_PATH "resources"
-#define PRAGMA_PATH "rg_parts"
+#define PRAGMA_PATH "resources\\rg_parts"
 
 #define OBJ_HEALTH skill50
 #define OBJ_HAS_RAGDOLL skill51
